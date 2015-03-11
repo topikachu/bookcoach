@@ -1,0 +1,14 @@
+<div class="scrollable">
+  <div id="myScrollableContent" class="scrollable-content section" ui-scroll-bottom="loadBottom()" ui-scroll-top="loadTop()">
+    <div class="list-group">
+      <div ng-repeat-start="date in items track by date.date"> </div>
+      <div class="section section-break">
+        {{date.date|amDateFormat:'MM-DD ddd A '}}
+      </div>
+      <div class="section section-break" ng-repeat="name in date.names track by $index">
+        {{name}}
+      </div>
+      <div ng-repeat-end></div>
+    </div>
+  </div>
+</div>
