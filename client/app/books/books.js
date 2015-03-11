@@ -4,7 +4,7 @@ angular.module('bookcoachApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('books', {
-        url: '/books',
+        url: '/',
         templateUrl: 'app/books/books.html',
         controller: 'BooksCtrl'
       });

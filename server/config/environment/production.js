@@ -24,8 +24,7 @@ module.exports = {
       user: process.env.MONGO_USER,
       pass: process.env.MONGO_PASS,
       server: {
-        auto_reconnect: true,
-        poolSize: 5
+        auto_reconnect: true
       }
     }
   }
